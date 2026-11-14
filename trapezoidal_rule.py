@@ -102,7 +102,7 @@ col_a, col_b = st.sidebar.columns(2)
 a = col_a.number_input("Lower limit a", key="a", step=0.5, format="%.3f")
 b = col_b.number_input("Upper limit b", key="b", step=0.5, format="%.3f")
 
-n = st.sidebar.slider("Number of trapezoids n", min_value=1, max_value=50, value=4)
+n = st.sidebar.slider("Number of trapezoids n", min_value=1, max_value=20, value=4)
 
 st.sidebar.markdown("---")
 show_area = st.sidebar.checkbox("Shade the true area under the curve", value=False)
